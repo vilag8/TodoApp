@@ -1,0 +1,285 @@
+*{
+  font-family: 'Roboto', sans-serif;
+}
+
+.transition-fade {
+  transition: 0.4s;
+  opacity: 1;
+}
+
+html.is-animating .transition-fade {
+  opacity: 0;
+}
+
+/*** HEADER ***/
+header, main{
+  background-color: #2a2f4a;
+  padding: 2%;
+  color: white;
+}
+
+header .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .header nav {
+  margin-top: 6%;
+}
+
+header .header nav ul {
+  list-style-type: none;
+  width: 99%;
+}
+
+header .header nav ul li {
+  display: inline;
+  color: white;
+  font-weight: bold;
+  margin: 4%;
+}
+
+/*** MAIN ***/
+ main p{
+  margin-bottom: 2px;
+}
+
+main button{
+  display: block;
+  margin-top: 8%;
+  background: rgb(230, 51, 51);
+  border: none;
+  color: white;
+  padding: 3%;
+}
+
+main .container{
+  display: flex;
+  justify-content: space-around;
+}
+
+/*** FORM REGISTRAZIONE E LOGIN ***/
+main .container form, .loginpage form{
+  display: inline-grid;
+  padding: 2%;
+  box-shadow: 2px 2px 32px -1px #e66465;
+  border-radius: 6%;
+}
+
+main .about{
+  background-image: url(images/screen.JPG);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+main .about h3{
+  text-align: center;
+  padding: 4%;
+}
+
+/*** FOOTER ***/
+footer{
+  background: linear-gradient(#2a2f4a 40%, #e66465);
+  padding: 1%;
+}
+
+footer .social{
+  text-align: center;
+  margin-top: 4%;
+}
+
+footer .social img{
+  margin-right: 10px;
+}
+
+/*** LOGIN PAGE ***/
+.loginpage{
+  text-align: center;
+}
+
+/*** WELCOME PAGE ***/
+#tasks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 3%;
+}
+
+#tasks p{
+  color: #2a2f4a;
+}
+
+#tasks form{
+  display: inline-grid;
+}
+
+#tasks .tasks {
+  background-color: rgb(253, 253, 167);
+  padding: 3%;
+  width: 50%;
+  margin:1%;
+}
+
+#tasks .tasks_in_corso {
+  background-color: #c9feb4;
+  padding: 3%;
+  width: 50%;
+  margin:1%;
+}
+
+#tasks .tasks_in_corso table {
+  color: #2a2f4a;
+  width: 100%;
+  padding: 1%;
+}
+#tasks .tasks_in_corso table tbody .button{
+  width: 1px;
+}
+
+#tasks a{
+  text-decoration: none;
+  color: #2a2f4a;
+}
+
+#tasks a li{
+  margin: 7% 0;
+}
+
+
+/** MEDIA QUERY **/
+
+/* Mobile Styles */ 
+@media only screen and (max-width: 400px) {
+  header .header nav ul {
+    width: unset;
+    margin: 87% -33%;
+  }
+  
+  header .header nav ul li {
+    margin: unset;
+  }
+
+  main .container{
+    display: block;
+  }
+
+  main .container form{
+    margin: 8% 24%;
+  }
+
+  main .container .about{
+    text-align: center;
+  }
+
+  main .container .about h1{
+    font-size: 112%;
+    margin-bottom: -17%;
+  }
+
+  main .about h3{
+    padding: 21%;
+    font-size: 92%;
+  }
+  
+  footer .social{
+    margin-top: 8%;
+  }
+
+  .loginpage{
+    padding: 23%;
+  }
+
+  .loginpage form{
+    padding: 12%;
+  }
+
+  /* LOGIN PAGE */
+  .accedipage{
+    padding: 4%;
+  }
+
+  .accedipage .social{
+    margin-top: 22%;
+  }
+
+  /* WELCOME PAGE */
+  header .header .nav_welcomepage{
+    margin-top: 0%;
+  }
+
+  main .text_welcomepage{
+    text-align: center;
+  }
+
+  main .text_welcomepage h1{
+    font-size: 155%;
+  }
+
+  #tasks{
+    display: grid;
+    margin-top: 13%;
+  }
+
+  #tasks .tasks, #tasks .tasks_in_corso{
+    width: unset;
+    text-align: center;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  header .header nav{
+    margin-top: 3%;
+  }
+  
+  header .header nav ul {
+    width: unset;
+    margin: 87% -33%;
+  }
+  
+  header .header nav ul li {
+    margin: unset;
+  }
+
+  main .container{
+    display: block;
+  }
+
+  main .container form{
+    margin: 8% 37%;
+  }
+
+  main .container .about{
+    text-align: center;
+  }
+
+  main .about h3{
+    padding: 20%;
+    margin-top: -9%;
+  }
+
+  .loginpage{
+    padding: 25%;
+  }
+
+  .accedipage .social{
+    margin-top: 13%;
+  }
+
+  main .text_welcomepage{
+    text-align: center;
+  }
+
+  #tasks{
+    margin-top: 10%;
+  }
+
+  footer .social{
+    margin-top: 15%;
+  }
+}
