@@ -6,6 +6,7 @@
     <html>
     <head>
         <title>Tasks</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
@@ -61,5 +62,6 @@
                 <a href="https://vincenzolagrotta.herokuapp.com"target="blank"><img src="images/social/001-world-wide-web.png" alt=""></a>
             </div>
         </footer>
+        <script src="script.js"></script>
     </body>
 </html>
